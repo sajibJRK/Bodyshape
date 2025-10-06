@@ -1,48 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Bodyshape.</title>
-</head>
-<body>
-  <main class="bg-black">
-    <!-- nav secton start  -->
-    <nav class=" flex sm:justify-between justify-center items-center w-11/12 mx-auto">
-        <!-- nav left -->
-        <div class=" flex justify-center sm:justify-around w-1/12 ">
-            <div class=" ">
-                <img class="pt-1 max-w-6" src="./image/logo_left.png" alt="">
-            </div>
-            <div>
-              <img class="max-w-35" src="./image/logo.png" alt="">
-            </div>
-            <div>
-                <img class="pt-1 max-w-6" src="./image/logo_right.png" alt="">
-            </div>
-        </div>
-        <!-- nav left end here -->
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <title>Bodyshape.</title>
+   </head>
+   <body>
+      <main class="">
+         <header
+            class="h-[1024px] bg-contain lg:bg-cover bg-no-repeat bg-[url('/image/banner.png')] relative"
+         >
+            <!-- nav secton start  -->
+            <nav
+               class="flex sm:justify-between justify-center items-center w-11/12 mx-auto"
+            >
+               <!-- nav left -->
+               <div
+                  class="flex justify-center sm:justify-around w-3/12 md:w-1/12"
+               >
+                  <div class=" ">
+                     <img class="pt-1 w-5" src="./image/logo_left.png" alt="" />
+                  </div>
+                  <div>
+                     <img class="" src="./image/logo.png" alt="" />
+                  </div>
+                  <div>
+                     <img
+                        class="pt-1 w-5"
+                        src="./image/logo_right.png"
+                        alt=""
+                     />
+                  </div>
+               </div>
+               <!-- nav left end here -->
 
-        <!-- nav right start -->
-        <div class="md:flex  gap-7 hidden font-bold text-white">
-            <ul class=" grid grid-cols-4 gap-9 text-center items-center">
-                <li class="border-b-2 border-[#F66844]"> <a href="">Home</a></li>
-                <li> <a href="">Services</a></li>
-                <li> <a href="">About</a></li>
-                <li> <a href="">Contacts</a></li>
-            </ul>
-            <div>
-                <button class="bg-gradient-to-r from-[#F66844] to-[#FF921B] p-3">Join Us</button>
+               <!-- nav right start -->
+               <div class="md:flex gap-7 hidden font-bold text-white">
+                  <ul class="grid grid-cols-4 gap-9 text-center items-center">
+                     <li class="border-b-2 border-[#F66844]">
+                        <a href="">Home</a>
+                     </li>
+                     <li><a href="">Services</a></li>
+                     <li><a href="">About</a></li>
+                     <li><a href="">Contacts</a></li>
+                  </ul>
+                  <div>
+                     <button
+                        class="bg-gradient-to-r from-[#F66844] to-[#FF921B] p-3"
+                     >
+                        Join Us
+                     </button>
+                  </div>
+               </div>
+               <!-- nav right end here -->
+            </nav>
+            <!-- nav section end -->
+            <!-- hero section start here -->
+            <div
+               class="text-white text-center md:flex flex-col gap-10 items-start mt-5 md:mt-20"
+            >
+               <div
+                  class="md:w-[500px] flex flex-col items-center gap-2 bg-gradient-to-b from-[#393939] to-[#393939]/0"
+               >
+                  <h1 class="text-3xl md:text-8xl">
+                     Transform <br />
+                     Your Body
+                  </h1>
+                  <p class="text-xs">
+                     We are dedicated to helping you transform your <br />
+                     body and mind through the power of fitness.
+                  </p>
+               </div>
+               <div class="mt-2 md:ml-20">
+                  <button
+                     class="bg-gradient-to-r from-[#F66844] to-[#FF921B] text-xs md:text-xl p-1 md:p-2"
+                  >
+                     Get Started
+                  </button>
+                  <button
+                     class="border-2 border-[#F66844] text-xs md:text-xl p-1 md:p-2"
+                  >
+                     <i class="fa-solid fa-circle-play text-[#F66844]"></i>Watch
+                     Reviews
+                  </button>
+               </div>
             </div>
-        </div>
-        <!-- nav right end here -->
-    </nav>
-    <!-- nav section end -->
-     <!-- hero section start here -->
-      <hero>
-        
-      </hero>
-  </main>
-</body>
+            <!-- hero section end -->
+            <div
+               class="text-white bg-gradient-to-r from-[#F66844] to-[#FF921B] flex gap-5 w-33 p-1 [clip-path:polygon(0_0,100%_0,80%_100%,0_100%)] absolute bottom-[-15px]"
+            >
+               <h1>
+                  <a href=""><i class="fa-brands fa-google"></i></a>
+               </h1>
+               <h1>
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+               </h1>
+               <h1>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+               </h1>
+            </div>
+         </header>
+         <!-- header section end here -->
+
+      </main>
+   </body>
 </html>
